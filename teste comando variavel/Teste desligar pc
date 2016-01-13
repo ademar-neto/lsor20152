@@ -1,0 +1,10 @@
+import java.io.IOException;
+import javax.swing.JOptionPane;
+
+public class DesligarPc {
+    
+    public static void main(String[] args) throws IOException {
+        JOptionPane.showMessageDialog(null,"Seu computador será desligado!");
+        Process exec = Runtime.getRuntime().exec("init 0"); 
+    }
+}
